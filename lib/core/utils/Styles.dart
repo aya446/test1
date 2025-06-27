@@ -1,0 +1,47 @@
+import 'package:flutter/material.dart';
+import 'package:test1/constants.dart';
+
+abstract class Styles {
+  static TextStyle black14 = TextStyle(
+    color: Colors.black,
+    fontFamily: 'Cairo',
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle black12 = TextStyle(
+    color: Colors.black,
+    fontFamily: 'Cairo',
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle black16 = TextStyle(
+    color: Colors.black,
+    fontFamily: 'Cairo',
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle gray10 = TextStyle(
+    color: AppColors.textColor,
+    fontFamily: 'Cairo',
+    fontSize: 10,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle gray12 = TextStyle(
+    color: AppColors.textColor,
+    fontFamily: 'Cairo',
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle orange12 = TextStyle(
+    color: AppColors.mainColor,
+    fontFamily: 'Cairo',
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle orange11 = TextStyle(
+    color: AppColors.mainColor,
+    fontFamily: 'Cairo',
+    fontSize: 11,
+    fontWeight: FontWeight.w500,
+  );
+}
