@@ -30,7 +30,7 @@ class SettingsCardItem extends StatelessWidget {
                 Row(
                   children: [
                     Text(settingsModel.description, style: Styles.black14),
-                    SizedBox(width: 3),
+                    SizedBox(width: 5),
                     Text(settingsModel.status ?? '', style: Styles.gray10),
                   ],
                 ),

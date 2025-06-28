@@ -111,4 +111,10 @@ abstract class Styles {
     fontSize: 16,
     fontWeight: FontWeight.w600,
   );
+  static TextStyle Red18 = TextStyle(
+    color: const Color(0xFFA5160C),
+    fontFamily: 'Cairo',
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+  );
 }
