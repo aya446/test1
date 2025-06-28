@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test1/constants.dart';
+import 'package:test1/core/utils/app_colors.dart';
 import 'package:test1/features/home/presentation/views/widgets/line_name_and_price.dart';
 import 'package:test1/features/home/presentation/views/widgets/travel_time.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:test1/constants.dart';
+import 'package:test1/core/utils/app_colors.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
   final int currentIndex;
@@ -31,24 +31,44 @@ class CustomBottomNavBar extends StatelessWidget {
         currentIndex: currentIndex,
         onTap: onTap,
         selectedItemColor: AppColors.mainColor,
-        unselectedItemColor: Colors.grey,
+        unselectedItemColor: AppColors.textColor,
         elevation: 0,
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
-            icon: SvgPicture.asset('assets/icons/home.svg'),
+            icon: SvgPicture.asset(
+              'assets/icons/home.svg',
+              color: currentIndex == 0
+                  ? AppColors.mainColor
+                  : AppColors.textColor,
+            ),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset('assets/icons/ticket-2.svg'),
+            icon: SvgPicture.asset(
+              'assets/icons/ticket-2.svg',
+              color: currentIndex == 1
+                  ? AppColors.mainColor
+                  : AppColors.textColor,
+            ),
             label: 'Ticket',
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset('assets/icons/crown.svg'),
+            icon: SvgPicture.asset(
+              'assets/icons/crown.svg',
+              color: currentIndex == 2
+                  ? AppColors.mainColor
+                  : AppColors.textColor,
+            ),
             label: 'Subscription',
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset('assets/icons/user.svg'),
+            icon: SvgPicture.asset(
+              'assets/icons/user.svg',
+              color: currentIndex == 3
+                  ? AppColors.mainColor
+                  : AppColors.textColor,
+            ),
             label: 'Profile',
           ),
         ],

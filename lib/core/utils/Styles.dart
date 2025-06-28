@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test1/constants.dart';
+import 'package:test1/core/utils/app_colors.dart';
 
 abstract class Styles {
   static TextStyle black14 = TextStyle(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:test1/constants.dart';
+import 'package:test1/core/utils/app_colors.dart';
 
 class ScanIconButton extends StatelessWidget {
   const ScanIconButton({super.key});

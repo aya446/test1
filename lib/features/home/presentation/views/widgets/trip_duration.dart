@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test1/constants.dart';
+import 'package:test1/core/utils/app_colors.dart';
 import 'package:test1/core/utils/Styles.dart';
 import 'package:test1/features/home/Data/models/trip_model.dart';
 
