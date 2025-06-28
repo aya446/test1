@@ -13,7 +13,7 @@ class TripDuration extends StatelessWidget {
         Container(width: 70, height: 2, color: AppColors.secondColor),
         Container(
           decoration: BoxDecoration(
-            border: Border.all(color: AppColors.secondColor),
+            border: Border.all(color: AppColors.secondColor, width: 2),
             borderRadius: BorderRadius.circular(12),
           ),
           child: Padding(

@@ -16,7 +16,7 @@ class HeaderSection extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Hey dr Ahmed', style: Styles.black16),
+            Text('Hi dr Ahmed', style: Styles.black16),
             Text('Subscription name', style: Styles.gray12),
           ],
         ),

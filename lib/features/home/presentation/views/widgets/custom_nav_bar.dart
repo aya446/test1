@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:test1/constants.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
@@ -34,21 +34,21 @@ class CustomBottomNavBar extends StatelessWidget {
         unselectedItemColor: Colors.grey,
         elevation: 0,
         type: BottomNavigationBarType.fixed,
-        items: const [
+        items: [
           BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.home),
+            icon: SvgPicture.asset('assets/icons/home.svg'),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.ticketSimple),
+            icon: SvgPicture.asset('assets/icons/ticket-2.svg'),
             label: 'Ticket',
           ),
           BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.crown),
+            icon: SvgPicture.asset('assets/icons/crown.svg'),
             label: 'Subscription',
           ),
           BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.user),
+            icon: SvgPicture.asset('assets/icons/user.svg'),
             label: 'Profile',
           ),
         ],
