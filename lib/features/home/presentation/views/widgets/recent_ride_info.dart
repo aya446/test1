@@ -10,7 +10,7 @@ class RecentRideInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.sizeOf(context).width * .9,
-      height: MediaQuery.sizeOf(context).width * .4,
+      height: MediaQuery.sizeOf(context).width * .37,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: AppColors.textColor),

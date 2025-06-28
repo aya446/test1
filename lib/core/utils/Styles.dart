@@ -38,10 +38,10 @@ abstract class Styles {
     fontSize: 12,
     fontWeight: FontWeight.w500,
   );
-  static TextStyle orange12 = TextStyle(
+  static TextStyle orange13 = TextStyle(
     color: AppColors.mainColor,
     fontFamily: 'Cairo',
-    fontSize: 12,
+    fontSize: 13,
     fontWeight: FontWeight.w500,
   );
   static TextStyle orange11 = TextStyle(
