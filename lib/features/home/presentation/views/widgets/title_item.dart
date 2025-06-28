@@ -11,7 +11,7 @@ class TitleItem extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(title, style: Styles.black16),
+          Text(title, style: Styles.black17),
           Text("See all", style: Styles.orange12),
         ],
       ),

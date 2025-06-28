@@ -11,14 +11,14 @@ class LinesItem extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 60,
-          height: 60,
+          width: 55,
+          height: 55,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
             color: AppColors.mainColor,
           ),
           child: Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(12.0),
             child: SvgPicture.asset('assets/icons/bus.svg'),
           ),
         ),
