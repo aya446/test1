@@ -26,6 +26,12 @@ abstract class Styles {
     fontSize: 17,
     fontWeight: FontWeight.w600,
   );
+  static TextStyle black20 = TextStyle(
+    color: Colors.black,
+    fontFamily: 'Cairo',
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+  );
   static TextStyle gray10 = TextStyle(
     color: AppColors.textColor,
     fontFamily: 'Cairo',
@@ -38,11 +44,24 @@ abstract class Styles {
     fontSize: 12,
     fontWeight: FontWeight.w500,
   );
+  static TextStyle gray14 = TextStyle(
+    color: AppColors.textColor,
+    fontFamily: 'Cairo',
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle gray16 = TextStyle(
+    color: AppColors.textColor,
+    fontFamily: 'Cairo',
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+  );
+
   static TextStyle orange13 = TextStyle(
     color: AppColors.mainColor,
     fontFamily: 'Cairo',
     fontSize: 13,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w600,
   );
   static TextStyle orange11 = TextStyle(
     color: AppColors.mainColor,
@@ -73,5 +92,17 @@ abstract class Styles {
     fontFamily: 'Cairo',
     fontSize: 12,
     fontWeight: FontWeight.w500,
+  );
+  static TextStyle green14 = TextStyle(
+    color: AppColors.secondColor,
+    fontFamily: 'Cairo',
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle green16 = TextStyle(
+    color: AppColors.secondColor,
+    fontFamily: 'Cairo',
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
   );
 }
