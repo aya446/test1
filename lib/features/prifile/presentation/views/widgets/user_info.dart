@@ -13,7 +13,7 @@ class UserInfo extends StatelessWidget {
       image: 'assets/images/userPNG.png',
       planType: 'Premium Subscription',
       numberOfTrips: '23 trips',
-      joinedYear: 'Joined since 2020',
+      joinedYear: '2020',
     );
 
     return Padding(
@@ -38,7 +38,7 @@ class UserInfo extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(user.planType, style: Styles.green12),
+                Text(user.planType, style: Styles.green14),
                 Container(width: 90, height: 1, color: AppColors.textColor),
                 Text('${user.numberOfTrips} trips', style: Styles.black12),
                 Container(width: 90, height: 1, color: AppColors.textColor),
