@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/utils/Styles.dart';
-import 'package:test1/features/subscription/presentation/views/widgets/plan_item.dart';
+import 'package:test1/features/subscription/presentation/views/widgets/blan_list_view_builder.dart';
 
 class SubscriptionBody extends StatelessWidget {
   const SubscriptionBody({super.key, required this.plan});
@@ -22,8 +22,8 @@ class SubscriptionBody extends StatelessWidget {
                   Text(plan, style: Styles.green16),
                 ],
               ),
-              SizedBox(height: 30),
-              PlanItem(),
+              SizedBox(height: 10),
+              PlanIListViewBuilder(),
             ],
           ),
         ),
