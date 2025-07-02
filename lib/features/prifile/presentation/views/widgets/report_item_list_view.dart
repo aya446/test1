@@ -18,7 +18,9 @@ class ReportItemListView extends StatelessWidget {
         icon: 'assets/icons/bus.svg',
         name: 'Report a bus',
         description: 'Bus',
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(context, AppRoutes.reportDetails);
+        },
       ),
       SettingsCardModel(
         icon: 'assets/icons/cpu-setting.svg',

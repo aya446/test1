@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/utils/Styles.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/report_body.dart';
+import 'package:test1/features/prifile/presentation/views/widgets/report_details_body.dart';
 
-class ReportView extends StatelessWidget {
-  const ReportView({super.key});
+class ReportDatailsView extends StatelessWidget {
+  const ReportDatailsView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class ReportView extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.transparent,
       ),
-      body: ReportBody(),
+      body: ReportDetailsBody(),
     );
   }
 }
