@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test1/features/prifile/data/models/settings_card_model.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/settings_card_item.dart';
+import 'package:test1/features/prifile/presentation/views/widgets/card_item.dart';
 
 class ProfileListView extends StatelessWidget {
   const ProfileListView({super.key});
@@ -8,26 +8,30 @@ class ProfileListView extends StatelessWidget {
   Widget build(BuildContext context) {
     List<SettingsCardModel> profileList = [
       SettingsCardModel(
-        Icon: 'assets/icons/wallet.svg',
+        icon: 'assets/icons/wallet.svg',
         name: 'Payemnts and wallet',
         description: 'Wallet',
+        onTap: () {},
       ),
       SettingsCardModel(
-        Icon: 'assets/icons/notification.svg',
+        icon: 'assets/icons/notification.svg',
         name: 'Notification',
         description: 'Notifications',
         status: '(You have new notification)',
+        onTap: () {},
       ),
       SettingsCardModel(
-        Icon: 'assets/icons/message.svg',
+        icon: 'assets/icons/message.svg',
         name: 'Messages and texting',
         description: 'Massages',
         status: '(You have new messages)',
+        onTap: () {},
       ),
       SettingsCardModel(
-        Icon: 'assets/icons/map.svg',
+        icon: 'assets/icons/map.svg',
         name: 'My trips and history',
         description: 'My trips',
+        onTap: () {},
       ),
     ];
     return ListView.builder(
@@ -38,7 +42,7 @@ class ProfileListView extends StatelessWidget {
       itemBuilder: (context, index) {
         return Padding(
           padding: const EdgeInsets.symmetric(vertical: 10.0),
-          child: SettingsCardItem(settingsModel: profileList[index]),
+          child: CardItem(settingsModel: profileList[index]),
         );
       },
     );

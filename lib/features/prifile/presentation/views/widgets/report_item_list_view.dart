@@ -3,32 +3,36 @@ import 'package:test1/core/routes/app_routes.dart';
 import 'package:test1/features/prifile/data/models/settings_card_model.dart';
 import 'package:test1/features/prifile/presentation/views/widgets/card_item.dart';
 
-class SettingsListView extends StatelessWidget {
-  const SettingsListView({super.key});
+class ReportItemListView extends StatelessWidget {
+  const ReportItemListView({super.key});
   @override
   Widget build(BuildContext context) {
     List<SettingsCardModel> profileList = [
       SettingsCardModel(
-        icon: 'assets/icons/Location.svg',
-        name: 'City',
-        description: 'Cairo',
-        status: '(You have new notification)',
+        icon: 'assets/icons/user.svg',
+        name: 'Report a bus driver',
+        description: 'Driver',
         onTap: () {},
       ),
       SettingsCardModel(
-        icon: 'assets/icons/language-square.svg',
-        name: 'Language',
-        description: 'English',
-        status: '(You have new messages)',
+        icon: 'assets/icons/bus.svg',
+        name: 'Report a bus',
+        description: 'Bus',
         onTap: () {},
       ),
       SettingsCardModel(
-        icon: 'assets/icons/warning-2.svg',
-        name: 'Report and FAQ',
-        description: 'Report a problem',
+        icon: 'assets/icons/cpu-setting.svg',
+        name: 'Technical problem with the app',
+        description: 'Technical problem ',
         onTap: () {
           Navigator.pushNamed(context, AppRoutes.report);
         },
+      ),
+      SettingsCardModel(
+        icon: 'assets/icons/headphone.svg',
+        name: 'Contact our customer service',
+        description: 'Contact us',
+        onTap: () {},
       ),
     ];
     return ListView.builder(
