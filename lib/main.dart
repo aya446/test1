@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test1/core/navigation/bottom_nav_layout.dart';
 import 'package:test1/core/routes/app_routes.dart';
 import 'package:test1/features/prifile/presentation/views/report_datails_view.dart';
+import 'package:test1/features/prifile/presentation/views/report_success.dart';
 import 'package:test1/features/prifile/presentation/views/report_view.dart';
 
 void main() {
@@ -20,6 +21,7 @@ class Test1 extends StatelessWidget {
         AppRoutes.home: (context) => const BottomNavLayout(),
         AppRoutes.report: (context) => const ReportView(),
         AppRoutes.reportDetails: (context) => const ReportDatailsView(),
+        AppRoutes.reportSuccess: (context) => const ReportSuccess(),
       },
     );
   }
