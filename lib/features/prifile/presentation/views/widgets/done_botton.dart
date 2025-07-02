@@ -13,7 +13,7 @@ class DoneBotton extends StatelessWidget {
       height: 55,
       child: ElevatedButton(
         onPressed: () {
-          Navigator.popUntil(context, ModalRoute.withName(AppRoutes.report));
+          Navigator.popUntil(context, ModalRoute.withName(AppRoutes.home));
         },
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.mainColor,

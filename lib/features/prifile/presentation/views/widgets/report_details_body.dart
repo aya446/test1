@@ -41,32 +41,44 @@ class _ReportDetailsBodyState extends State<ReportDetailsBody> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(20.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text("What is the trip number ?", style: Styles.black16),
-          SizedBox(height: 15),
-          CostomSearchBar(),
-          SizedBox(height: 20),
-          Text("Why do you want to report the driver ?", style: Styles.black16),
-          SizedBox(height: 15),
-          ReportDriverListView(onItemSelected: handleItemSelected),
-          if (showTextfield) ...[
-            Text("Tell us what happened ?", style: Styles.black16),
-            SizedBox(height: 15),
-            ReportTextField(),
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          children: [
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("What is the trip number ?", style: Styles.black16),
+                    SizedBox(height: 15),
+                    CostomSearchBar(),
+                    SizedBox(height: 20),
+                    Text(
+                      "Why do you want to report the driver ?",
+                      style: Styles.black16,
+                    ),
+                    SizedBox(height: 15),
+                    ReportDriverListView(onItemSelected: handleItemSelected),
+                    if (showTextfield) ...[
+                      Text("Tell us what happened ?", style: Styles.black16),
+                      SizedBox(height: 15),
+                      ReportTextField(onChanged: handleOtherTextChanged),
+                    ],
+                    SizedBox(height: 30),
+                  ],
+                ),
+              ),
+            ),
+            CustomElevatedBottun(
+              isButtonEnabled: isButtonEnabled,
+              selectedReason: selectedReason,
+              otherText: otherText,
+            ),
+            SizedBox(height: 30),
           ],
-          SizedBox(height: 30),
-          Spacer(),
-          CustomElevatedBottun(
-            isButtonEnabled: isButtonEnabled,
-            selectedReason: selectedReason,
-            otherText: otherText,
-          ),
-          SizedBox(height: 30),
-        ],
+        ),
       ),
     );
   }

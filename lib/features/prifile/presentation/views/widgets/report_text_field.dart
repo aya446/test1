@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:test1/core/utils/app_colors.dart';
 
 class ReportTextField extends StatelessWidget {
-  const ReportTextField({super.key});
+  const ReportTextField({super.key, required this.onChanged});
+  final ValueChanged<String> onChanged;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,7 @@ class ReportTextField extends StatelessWidget {
         ),
         enabledBorder: outLineInputBoarder(),
       ),
-      onChanged: (value) {},
+      onChanged: onChanged,
     );
   }
 
