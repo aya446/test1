@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:test1/core/utils/Styles.dart';
 import 'package:test1/core/utils/app_colors.dart';
-import 'package:test1/features/prifile/data/models/settings_card_model.dart';
+import 'package:test1/features/profile/data/models/settings_card_model.dart';
 
 class CardItem extends StatelessWidget {
   const CardItem({super.key, required this.settingsModel});

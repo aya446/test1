@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:test1/core/utils/Styles.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/done_botton.dart';
+import 'package:test1/features/profile/presentation/views/report_view/widgets/done_botton.dart';
 
 class ReportSuccessBody extends StatelessWidget {
   const ReportSuccessBody({super.key});

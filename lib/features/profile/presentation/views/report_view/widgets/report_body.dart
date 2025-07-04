@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/utils/Styles.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/FAQ_list_view.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/report_item_list_view.dart';
+import 'package:test1/features/profile/presentation/views/report_view/widgets/FAQ_list_view.dart';
+import 'package:test1/features/profile/presentation/views/report_view/widgets/report_item_list_view.dart';
 
 class ReportBody extends StatelessWidget {
   const ReportBody({super.key});

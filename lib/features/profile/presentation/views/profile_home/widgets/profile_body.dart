@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:test1/core/utils/Styles.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/profile_list_view.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/settings_list_view.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/user_info_cart.dart';
+import 'package:test1/features/profile/presentation/views/profile_home/widgets/profile_list_view.dart';
+import 'package:test1/features/profile/presentation/views/profile_home/widgets/settings_list_view.dart';
+import 'package:test1/features/profile/presentation/views/profile_home/widgets/user_info_cart.dart';
 
 class ProfileBody extends StatelessWidget {
   const ProfileBody({super.key});

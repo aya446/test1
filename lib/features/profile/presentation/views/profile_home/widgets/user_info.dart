@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/utils/Styles.dart';
 import 'package:test1/core/utils/app_colors.dart';
-import 'package:test1/features/prifile/data/models/user_model.dart';
+import 'package:test1/features/profile/data/models/user_model.dart';
 
 class UserInfo extends StatelessWidget {
   const UserInfo({super.key});

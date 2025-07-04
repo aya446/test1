@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/utils/app_colors.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/user_info.dart';
+import 'package:test1/features/profile/presentation/views/profile_home/widgets/user_info.dart';
 
 class UserInfoCart extends StatelessWidget {
   const UserInfoCart({super.key});

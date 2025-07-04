@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/utils/Styles.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/costom_search_bar.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/custom_elevated_bottun.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/report_driver_list_view.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/report_text_field.dart';
+import 'package:test1/features/profile/presentation/views/report_view/widgets/costom_search_bar.dart';
+import 'package:test1/features/profile/presentation/views/report_view/widgets/custom_elevated_bottun.dart';
+import 'package:test1/features/profile/presentation/views/report_view/widgets/report_driver_list_view.dart';
+import 'package:test1/features/profile/presentation/views/report_view/widgets/report_text_field.dart';
 
 class ReportDetailsBody extends StatefulWidget {
   const ReportDetailsBody({super.key});

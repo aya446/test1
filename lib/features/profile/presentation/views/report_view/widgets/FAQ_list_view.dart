@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test1/features/prifile/data/models/FAQ_model.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/FAQ_item.dart';
+import 'package:test1/features/profile/data/models/FAQ_model.dart';
+import 'package:test1/features/profile/presentation/views/report_view/widgets/FAQ_item.dart';
 
 class FaqListView extends StatelessWidget {
   const FaqListView({super.key});

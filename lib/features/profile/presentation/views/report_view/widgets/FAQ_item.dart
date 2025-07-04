@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:test1/core/utils/Styles.dart';
 import 'package:test1/core/utils/app_colors.dart';
-import 'package:test1/features/prifile/data/models/FAQ_model.dart';
+import 'package:test1/features/profile/data/models/FAQ_model.dart';
 
 class FAQItem extends StatelessWidget {
   const FAQItem({super.key, required this.faqModel});

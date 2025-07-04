@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/routes/app_routes.dart';
-import 'package:test1/features/prifile/data/models/settings_card_model.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/card_item.dart';
+import 'package:test1/features/profile/data/models/settings_card_model.dart';
+import 'package:test1/features/profile/presentation/views/profile_home/widgets/card_item.dart';
 
 class ReportItemListView extends StatelessWidget {
   const ReportItemListView({super.key});

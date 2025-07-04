@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/utils/Styles.dart';
-import 'package:test1/features/prifile/presentation/views/widgets/report_details_body.dart';
+import 'package:test1/features/profile/presentation/views/report_view/widgets/report_details_body.dart';
 
 class ReportDatailsView extends StatelessWidget {
   const ReportDatailsView({super.key});
