@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/navigation/bottom_nav_layout.dart';
 import 'package:test1/core/routes/app_routes.dart';
+import 'package:test1/features/home/presentation/views/notification_view.dart';
 import 'package:test1/features/profile/presentation/views/my_trips_view/my_trips_view.dart';
 import 'package:test1/features/profile/presentation/views/report_view/report_datails_view.dart';
 import 'package:test1/features/profile/presentation/views/report_view/report_success.dart';
@@ -24,6 +25,7 @@ class Test1 extends StatelessWidget {
         AppRoutes.reportDetails: (context) => const ReportDatailsView(),
         AppRoutes.reportSuccess: (context) => const ReportSuccess(),
         AppRoutes.MyTrips: (context) => const MyTripsView(),
+        AppRoutes.notofication: (context) => const NotificationView(),
       },
     );
   }

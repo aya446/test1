@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:test1/core/routes/app_routes.dart';
 import 'package:test1/core/utils/app_colors.dart';
 import 'package:test1/core/utils/Styles.dart';
 import 'package:test1/features/home/presentation/views/widgets/scan_Icon_Button.dart';
@@ -21,7 +22,12 @@ class HeaderSection extends StatelessWidget {
           ],
         ),
         Spacer(),
-        IconButton(onPressed: () {}, icon: Icon(FontAwesomeIcons.bell)),
+        IconButton(
+          onPressed: () {
+            Navigator.pushNamed(context, AppRoutes.notofication);
+          },
+          icon: Icon(FontAwesomeIcons.bell),
+        ),
         SizedBox(width: 7),
         ScanIconButton(),
       ],

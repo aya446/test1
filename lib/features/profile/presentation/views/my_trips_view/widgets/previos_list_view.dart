@@ -56,6 +56,7 @@ class PreviosListView extends StatelessWidget {
                 Text('#${tripsList[index].date!}', style: Styles.darkGray12),
               ],
             ),
+            SizedBox(height: 20),
           ],
         );
       },
