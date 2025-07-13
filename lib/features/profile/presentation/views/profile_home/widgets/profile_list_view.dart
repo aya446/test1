@@ -33,7 +33,7 @@ class ProfileListView extends StatelessWidget {
         name: 'My trips and history',
         description: 'My trips',
         onTap: () {
-          Navigator.pushNamed(context, AppRoutes.MyTrips);
+          Navigator.pushNamed(context, AppRoutes.myTrips);
         },
       ),
     ];

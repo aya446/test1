@@ -56,6 +56,12 @@ abstract class Styles {
     fontSize: 12,
     fontWeight: FontWeight.w500,
   );
+  static TextStyle darkGray14 = TextStyle(
+    color: Color(0xff7A7A7A),
+    fontFamily: 'Cairo',
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
   static TextStyle gray14 = TextStyle(
     color: AppColors.textColor,
     fontFamily: 'Cairo',

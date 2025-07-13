@@ -16,7 +16,7 @@ class TripDuration extends StatelessWidget {
     return Row(
       children: [
         Container(
-          width: 70,
+          width: 60,
           height: 2,
           color: isActive ? AppColors.secondColor : AppColors.darkGray,
         ),
@@ -37,7 +37,7 @@ class TripDuration extends StatelessWidget {
           ),
         ),
         Container(
-          width: 70,
+          width: 60,
           height: 2,
           color: isActive ? AppColors.secondColor : AppColors.darkGray,
         ),

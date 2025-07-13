@@ -26,7 +26,11 @@ class RecentRideCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           RecentRideName(recentRideModel: recentRideModel, isActive: isActive),
-          RecentRideTime(recentRideModel: recentRideModel, isActive: isActive),
+          RecentRideTime(
+            recentRideModel: recentRideModel,
+            isActive: isActive,
+            isWhite: false,
+          ),
         ],
       ),
     );

@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:test1/core/routes/app_routes.dart';
 import 'package:test1/core/utils/Styles.dart';
+import 'package:test1/features/booking/presentation/views/widgets/ticket_item.dart';
 import 'package:test1/features/profile/presentation/views/report_view/widgets/done_botton.dart';
 
-class ReportSuccessBody extends StatelessWidget {
-  const ReportSuccessBody({super.key});
+class TicketBody extends StatelessWidget {
+  const TicketBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,14 +17,15 @@ class ReportSuccessBody extends StatelessWidget {
         children: [
           SvgPicture.asset('assets/images/done.svg'),
           SizedBox(height: 30),
-          Text('Reported successfully', style: Styles.black24),
+          Text('Booking successfully', style: Styles.black24),
           SizedBox(height: 15),
-          Text('You will hear from us soon', style: Styles.orange20),
-          SizedBox(height: 50),
-          SvgPicture.asset('assets/images/reportImage.svg'),
+          Text('Thank you', style: Styles.orange20),
+          SizedBox(height: 30),
+          TicketItem(),
           Spacer(),
           DoneBotton(
-            title: 'Done',
+            isActive: true,
+            title: 'Download Ticket',
             actoin: () {
               Navigator.of(context).pushNamed(AppRoutes.home);
             },

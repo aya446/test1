@@ -11,9 +11,13 @@ class RecentRideModel {
   final String arrivalStation;
   final String? date;
   final String? tripNumber;
+  final String? seatNumber;
+  final String? paymentStatus;
 
   RecentRideModel({
+    this.paymentStatus,
     this.date,
+    this.seatNumber,
     this.tripNumber,
     required this.lineName,
     required this.linePrice,

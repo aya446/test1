@@ -31,6 +31,7 @@ class NextTrip extends StatelessWidget {
               ],
             ),
             RecentRideTime(
+              isWhite: false,
               isActive: true,
               recentRideModel: RecentRideModel(
                 lineName: "Zayed line",

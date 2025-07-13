@@ -24,7 +24,7 @@ class HeaderSection extends StatelessWidget {
         Spacer(),
         IconButton(
           onPressed: () {
-            Navigator.pushNamed(context, AppRoutes.notofication);
+            Navigator.pushNamed(context, AppRoutes.notification);
           },
           icon: Icon(FontAwesomeIcons.bell),
         ),
