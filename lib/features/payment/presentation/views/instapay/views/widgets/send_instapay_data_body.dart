@@ -1,12 +1,20 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:test1/core/utils/Styles.dart';
-import 'package:test1/core/utils/app_colors.dart';
+import 'package:test1/core/routes/app_routes.dart';
+import 'package:test1/features/booking/presentation/views/widgets/policy_bottom_Sheet.dart';
 import 'package:test1/features/payment/presentation/views/instapay/views/widgets/instapay_data_list_view.dart';
+import 'package:test1/features/payment/presentation/views/instapay/views/widgets/reciept_image_picker.dart';
 import 'package:test1/features/profile/presentation/views/report_view/widgets/done_botton.dart';
 
-class SendInstapayDataBody extends StatelessWidget {
+class SendInstapayDataBody extends StatefulWidget {
   const SendInstapayDataBody({super.key});
+
+  @override
+  State<SendInstapayDataBody> createState() => _SendInstapayDataBodyState();
+}
+
+class _SendInstapayDataBodyState extends State<SendInstapayDataBody> {
+  File? _uploadedImage;
 
   @override
   Widget build(BuildContext context) {
@@ -14,26 +22,48 @@ class SendInstapayDataBody extends StatelessWidget {
       padding: const EdgeInsets.all(20.0),
       child: Column(
         children: [
-          Container(
-            width: double.infinity,
-            height: MediaQuery.sizeOf(context).width * 0.2,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12),
-              color: AppColors.textColor,
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SvgPicture.asset('assets/icons/camera.svg'),
-                Text('Send Receipt photo', style: Styles.White12),
-              ],
-            ),
+          ReceiptImagePicker(
+            onImagePicked: (image) {
+              setState(() {
+                _uploadedImage = image;
+              });
+            },
           ),
-          SizedBox(height: 12),
-          InstapayDataListView(),
-          Spacer(),
-          DoneBotton(title: 'Send details', actoin: () {}),
-          SizedBox(height: 20),
+          const SizedBox(height: 12),
+          const InstapayDataListView(),
+          const Spacer(),
+          DoneBotton(
+            title: 'Send details',
+            actoin: () {
+              if (_uploadedImage != null) {
+                Navigator.pushNamed(context, AppRoutes.donePayment);
+                // ScaffoldMessenger.of(context).showSnackBar(
+                //   const SnackBar(
+                //     content: Text('Please upload a receipt image'),
+                //   ),
+                // );
+              } else {
+                showModalBottomSheet(
+                  context: context,
+                  backgroundColor: Colors.white,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.vertical(
+                      top: Radius.circular(20),
+                    ),
+                  ),
+                  builder: (context) {
+                    return PolicyBottomSheet(
+                      onTap: () {
+                        Navigator.pushNamed(context, AppRoutes.donePayment);
+                      },
+                    );
+                  },
+                );
+              }
+            },
+            isActive: true, //_uploadedImage != null,
+          ),
+          const SizedBox(height: 20),
         ],
       ),
     );

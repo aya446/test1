@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test1/core/routes/app_routes.dart';
 import 'package:test1/core/utils/Styles.dart';
 import 'package:test1/features/booking/presentation/views/widgets/policy_bottom_Sheet.dart';
 import 'package:test1/features/booking/presentation/views/widgets/seat_status.dart';
@@ -70,7 +71,11 @@ class _BookingBodyState extends State<BookingBody> {
                   borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
                 ),
                 builder: (context) {
-                  return const PolicyBottomSheet();
+                  return PolicyBottomSheet(
+                    onTap: () {
+                      Navigator.pushNamed(context, AppRoutes.ticket);
+                    },
+                  );
                 },
               );
             },

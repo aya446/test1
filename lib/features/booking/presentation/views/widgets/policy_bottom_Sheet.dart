@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:test1/core/routes/app_routes.dart';
 import 'package:test1/core/utils/Styles.dart';
 import 'package:test1/core/utils/app_colors.dart';
 import 'package:test1/features/profile/presentation/views/report_view/widgets/done_botton.dart';
 
 class PolicyBottomSheet extends StatefulWidget {
-  const PolicyBottomSheet({super.key});
-
+  const PolicyBottomSheet({super.key, required this.onTap});
+  final Function() onTap;
   @override
   State<PolicyBottomSheet> createState() => _PolicyBottomSheetState();
 }
@@ -43,13 +42,7 @@ class _PolicyBottomSheetState extends State<PolicyBottomSheet> {
             ],
           ),
           const SizedBox(height: 40),
-          DoneBotton(
-            title: 'Next',
-            isActive: isChecked,
-            actoin: () {
-              Navigator.pushNamed(context, AppRoutes.ticket);
-            },
-          ),
+          DoneBotton(title: 'Next', isActive: isChecked, actoin: widget.onTap),
         ],
       ),
     );

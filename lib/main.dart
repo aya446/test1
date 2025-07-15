@@ -4,6 +4,7 @@ import 'package:test1/core/routes/app_routes.dart';
 import 'package:test1/features/booking/presentation/views/booking_view.dart';
 import 'package:test1/features/booking/presentation/views/ticket_view.dart';
 import 'package:test1/features/home/presentation/views/notification_view.dart';
+import 'package:test1/features/payment/presentation/views/instapay/views/done_payment_view.dart';
 import 'package:test1/features/payment/presentation/views/instapay/views/instapay_view.dart';
 import 'package:test1/features/payment/presentation/views/payment_methods/views/payment_methods_view.dart';
 import 'package:test1/features/payment/presentation/views/instapay/views/send_instapay_data_view.dart';
@@ -44,6 +45,7 @@ class Test1 extends StatelessWidget {
         AppRoutes.vodafon: (context) => const VodafonView(),
         AppRoutes.sendInstapay: (context) => const SendInstapayDataView(),
         AppRoutes.sendVodafon: (context) => const SendVodafonDataView(),
+        AppRoutes.donePayment: (context) => const DonePaymentView(),
       },
     );
   }

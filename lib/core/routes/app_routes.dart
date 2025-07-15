@@ -14,4 +14,5 @@ class AppRoutes {
   static const String vodafon = '/vodafon';
   static const String sendInstapay = '/sendInstapay';
   static const String sendVodafon = '/sendVodafon';
+  static const String donePayment = '/donePayment';
 }
