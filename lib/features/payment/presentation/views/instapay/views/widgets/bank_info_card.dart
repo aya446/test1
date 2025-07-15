@@ -4,7 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:test1/core/utils/Styles.dart';
 import 'package:test1/core/utils/app_colors.dart';
 import 'package:test1/features/payment/data/models/bank_info_model.dart';
-import 'package:test1/features/payment/presentation/views/widgets/floating_toast.dart';
+import 'package:test1/features/payment/presentation/views/instapay/views/widgets/floating_toast.dart';
 
 class BankInfoCard extends StatelessWidget {
   const BankInfoCard({super.key, required this.bankInfoModel});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/routes/app_routes.dart';
 import 'package:test1/core/utils/Styles.dart';
-import 'package:test1/features/payment/presentation/views/widgets/payment_history_list_view.dart';
-import 'package:test1/features/payment/presentation/views/widgets/wallet_balance.dart';
+import 'package:test1/features/payment/presentation/views/wallet/views/widgets/payment_history_list_view.dart';
+import 'package:test1/features/payment/presentation/views/wallet/views/widgets/wallet_balance.dart';
 import 'package:test1/features/profile/presentation/views/report_view/widgets/done_botton.dart';
 
 class WalletBody extends StatelessWidget {

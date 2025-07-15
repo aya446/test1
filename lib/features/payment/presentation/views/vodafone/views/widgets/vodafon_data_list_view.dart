@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test1/features/payment/data/models/payment_data_model.dart';
-import 'package:test1/features/payment/presentation/views/widgets/payment_data.dart';
+import 'package:test1/features/payment/presentation/views/instapay/views/widgets/payment_data.dart';
 
 class VodafonDataListView extends StatelessWidget {
   const VodafonDataListView({super.key});

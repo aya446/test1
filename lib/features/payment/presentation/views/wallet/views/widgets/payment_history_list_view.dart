@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test1/features/payment/data/models/payment_history_model.dart';
-import 'package:test1/features/payment/presentation/views/widgets/payment_history_item.dart';
+import 'package:test1/features/payment/presentation/views/wallet/views/widgets/payment_history_item.dart';
 
 class PaymentHistoryListView extends StatelessWidget {
   const PaymentHistoryListView({super.key});

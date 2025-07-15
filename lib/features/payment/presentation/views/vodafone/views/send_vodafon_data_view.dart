@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/utils/Styles.dart';
-import 'package:test1/features/payment/presentation/views/widgets/vodafon_body.dart';
+import 'package:test1/features/payment/presentation/views/vodafone/views/widgets/send_vodafon_data_body.dart';
 
-class VodafonView extends StatelessWidget {
-  const VodafonView({super.key});
+class SendVodafonDataView extends StatelessWidget {
+  const SendVodafonDataView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class VodafonView extends StatelessWidget {
         title: Text('Wallet', style: Styles.black16),
         centerTitle: true,
       ),
-      body: VodafonBody(),
+      body: SendVodafonDataBody(),
     );
   }
 }

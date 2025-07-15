@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test1/features/payment/data/models/bank_info_model.dart';
-import 'package:test1/features/payment/presentation/views/widgets/bank_info_card.dart';
+import 'package:test1/features/payment/presentation/views/instapay/views/widgets/bank_info_card.dart';
 
 class BankInfoListView extends StatelessWidget {
   const BankInfoListView({super.key});

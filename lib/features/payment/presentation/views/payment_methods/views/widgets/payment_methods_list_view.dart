@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/routes/app_routes.dart';
-import 'package:test1/features/payment/presentation/views/widgets/payment_method_item.dart';
+import 'package:test1/features/payment/presentation/views/payment_methods/views/widgets/payment_method_item.dart';
 import 'package:test1/features/profile/data/models/settings_card_model.dart';
 
 class PaymentMethodsListView extends StatelessWidget {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/utils/Styles.dart';
-import 'package:test1/features/payment/presentation/views/widgets/wallet_body.dart';
+import 'package:test1/features/payment/presentation/views/vodafone/views/widgets/vodafon_body.dart';
 
-class WalletView extends StatelessWidget {
-  const WalletView({super.key});
+class VodafonView extends StatelessWidget {
+  const VodafonView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class WalletView extends StatelessWidget {
         title: Text('Wallet', style: Styles.black16),
         centerTitle: true,
       ),
-      body: WalletBody(),
+      body: VodafonBody(),
     );
   }
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:test1/core/utils/Styles.dart';
 import 'package:test1/core/utils/app_colors.dart';
-import 'package:test1/features/payment/presentation/views/widgets/instapay_data_list_view.dart';
+import 'package:test1/features/payment/presentation/views/instapay/views/widgets/instapay_data_list_view.dart';
 import 'package:test1/features/profile/presentation/views/report_view/widgets/done_botton.dart';
 
 class SendInstapayDataBody extends StatelessWidget {
