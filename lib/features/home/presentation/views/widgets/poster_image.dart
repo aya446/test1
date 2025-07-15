@@ -9,7 +9,7 @@ class PosterImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, AppRoutes.booking);
+        Navigator.pushNamed(context, AppRoutes.wallet);
       },
       child: Container(
         width: double.infinity,

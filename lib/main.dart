@@ -4,6 +4,13 @@ import 'package:test1/core/routes/app_routes.dart';
 import 'package:test1/features/booking/presentation/views/booking_view.dart';
 import 'package:test1/features/booking/presentation/views/ticket_view.dart';
 import 'package:test1/features/home/presentation/views/notification_view.dart';
+import 'package:test1/features/payment/presentation/views/instapay_view.dart';
+import 'package:test1/features/payment/presentation/views/payment_methods_view.dart';
+import 'package:test1/features/payment/presentation/views/send_instapay_data_view.dart';
+import 'package:test1/features/payment/presentation/views/send_vodafon_data_view.dart';
+import 'package:test1/features/payment/presentation/views/vodafon_view.dart';
+import 'package:test1/features/payment/presentation/views/wallet_balance_view.dart';
+import 'package:test1/features/payment/presentation/views/wallet_view.dart';
 import 'package:test1/features/profile/presentation/views/my_trips_view/my_trips_view.dart';
 import 'package:test1/features/profile/presentation/views/report_view/report_datails_view.dart';
 import 'package:test1/features/profile/presentation/views/report_view/report_success.dart';
@@ -30,6 +37,13 @@ class Test1 extends StatelessWidget {
         AppRoutes.notification: (context) => const NotificationView(),
         AppRoutes.booking: (context) => const BookingView(),
         AppRoutes.ticket: (context) => const TicketView(),
+        AppRoutes.wallet: (context) => const WalletView(),
+        AppRoutes.walletBalance: (context) => const WalletBalanceView(),
+        AppRoutes.paymentMethods: (context) => const PaymentMethodsView(),
+        AppRoutes.instaPay: (context) => const InstapayView(),
+        AppRoutes.vodafon: (context) => const VodafonView(),
+        AppRoutes.sendInstapay: (context) => const SendInstapayDataView(),
+        AppRoutes.sendVodafon: (context) => const SendVodafonDataView(),
       },
     );
   }

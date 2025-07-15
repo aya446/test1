@@ -10,12 +10,14 @@ class ReportItemListView extends StatelessWidget {
     List<SettingsCardModel> profileList = [
       SettingsCardModel(
         icon: 'assets/icons/user.svg',
+        iconColor: Colors.black,
         name: 'Report a bus driver',
         description: 'Driver',
         onTap: () {},
       ),
       SettingsCardModel(
         icon: 'assets/icons/bus.svg',
+        iconColor: Colors.black,
         name: 'Report a bus',
         description: 'Bus',
         onTap: () {
@@ -24,6 +26,7 @@ class ReportItemListView extends StatelessWidget {
       ),
       SettingsCardModel(
         icon: 'assets/icons/cpu-setting.svg',
+        iconColor: Colors.black,
         name: 'Technical problem with the app',
         description: 'Technical problem ',
         onTap: () {
@@ -32,6 +35,7 @@ class ReportItemListView extends StatelessWidget {
       ),
       SettingsCardModel(
         icon: 'assets/icons/headphone.svg',
+        iconColor: Colors.black,
         name: 'Contact our customer service',
         description: 'Contact us',
         onTap: () {},
