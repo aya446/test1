@@ -1,8 +1,7 @@
+// features/subscription/view/widgets/plan_info.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:test1/core/utils/Styles.dart';
 import 'package:test1/features/subscription/data/models/plan_model.dart';
-import 'package:test1/features/subscription/presentation/views/widgets/custom_boton.dart';
 
 class PlanInfo extends StatelessWidget {
   const PlanInfo({super.key, required this.plan});
@@ -19,11 +18,17 @@ class PlanInfo extends StatelessWidget {
         children: [
           Row(
             children: [
-              Text(plan.planName, style: Styles.black16),
+              Text(
+                plan.planName,
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               const Spacer(),
-              Text(plan.planType, style: Styles.black14),
+              Text(plan.planType, style: const TextStyle(fontSize: 14)),
               SizedBox(width: size.width * 0.01),
-              SvgPicture.asset(plan.planTypeIcon),
+              SvgPicture.asset(plan.planTypeIcon, width: 20, height: 20),
             ],
           ),
           SizedBox(height: size.height * 0.01),
@@ -33,23 +38,24 @@ class PlanInfo extends StatelessWidget {
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               plan.description,
-              style: Styles.gray16,
+              style: const TextStyle(color: Colors.grey),
             ),
           ),
           SizedBox(height: size.height * 0.01),
           Text(
             'Number of Tickets per month ${plan.numberOfTickets} Tickets',
-            style: Styles.orange13,
+            style: const TextStyle(color: Colors.orange, fontSize: 13),
           ),
           SizedBox(height: size.height * 0.01),
           Row(
             children: [
-              Text('${plan.price} EGP ', style: Styles.green16),
-              Text('Per Month', style: Styles.black14),
+              Text(
+                '${plan.price} EGP ',
+                style: const TextStyle(color: Colors.green, fontSize: 16),
+              ),
+              const Text('Per Month', style: TextStyle(fontSize: 14)),
             ],
           ),
-          SizedBox(height: size.height * 0.02),
-          CustomButton(plan: plan),
         ],
       ),
     );

@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+import 'package:test1/core/utils/Styles.dart';
+import 'package:test1/features/profile/presentation/views/report/widgets/report_body.dart';
+
+class ReportView extends StatelessWidget {
+  const ReportView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: Text('Report', style: Styles.black16),
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+      ),
+      body: ReportBody(),
+    );
+  }
+}

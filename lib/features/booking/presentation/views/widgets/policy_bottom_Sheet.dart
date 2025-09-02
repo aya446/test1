@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/utils/Styles.dart';
 import 'package:test1/core/utils/app_colors.dart';
-import 'package:test1/features/profile/presentation/views/report_view/widgets/done_botton.dart';
+import 'package:test1/features/profile/presentation/views/report/widgets/done_botton.dart';
 
 class PolicyBottomSheet extends StatefulWidget {
   const PolicyBottomSheet({super.key, required this.onTap});

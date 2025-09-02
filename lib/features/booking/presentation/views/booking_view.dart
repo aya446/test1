@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:test1/core/utils/Styles.dart';
+import 'package:test1/features/booking/data/cubits/booking_cubit.dart';
 import 'package:test1/features/booking/presentation/views/widgets/booking_body.dart';
 
 class BookingView extends StatelessWidget {
@@ -14,7 +16,10 @@ class BookingView extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.transparent,
       ),
-      body: BookingBody(),
+      body: BlocProvider(
+        create: (context) => BookingCubit(),
+        child: const BookingBody(),
+      ),
     );
   }
 }

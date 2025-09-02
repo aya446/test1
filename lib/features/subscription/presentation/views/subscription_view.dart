@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:test1/features/subscription/data/cubits/subscription_cubit.dart';
 import 'package:test1/features/subscription/presentation/views/widgets/subscription_body.dart';
 
 class SubscriptionView extends StatelessWidget {
@@ -6,6 +8,9 @@ class SubscriptionView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SubscriptionBody(plan: 'primum');
+    return BlocProvider(
+      create: (context) => SubscriptionCubit()..loadPlans(),
+      child: const Scaffold(body: SubscriptionBody()),
+    );
   }
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:test1/core/routes/app_routes.dart';
 import 'package:test1/core/utils/Styles.dart';
 
 class PosterImage extends StatelessWidget {
@@ -8,9 +7,7 @@ class PosterImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Navigator.pushNamed(context, AppRoutes.wallet);
-      },
+      onTap: () {},
       child: Container(
         width: double.infinity,
         height: MediaQuery.sizeOf(context).width * .23,
