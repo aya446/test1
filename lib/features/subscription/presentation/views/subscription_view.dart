@@ -10,7 +10,7 @@ class SubscriptionView extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => SubscriptionCubit()..loadPlans(),
-      child: const Scaffold(body: SubscriptionBody()),
+      child: Scaffold(backgroundColor: Colors.white, body: SubscriptionBody()),
     );
   }
 }

@@ -1,7 +1,8 @@
-class LinesModel {
-  final String lineName;
-  final List<String>? stations;
-  final List<String>? time;
+import 'package:test1/features/home/Data/models/ride_model.dart';
 
-  LinesModel({required this.lineName, this.stations, this.time});
+class LineModel {
+  final String lineName;
+  final List<RideModel>? rides;
+
+  LineModel({required this.lineName, this.rides});
 }

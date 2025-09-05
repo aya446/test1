@@ -54,7 +54,10 @@ class BookingBody extends StatelessWidget {
                     builder: (context) {
                       return PolicyBottomSheet(
                         onTap: () {
-                          Navigator.pushNamed(context, AppRoutes.ticket);
+                          Navigator.pushNamed(
+                            context,
+                            AppRoutes.downloadTicket,
+                          );
                         },
                       );
                     },

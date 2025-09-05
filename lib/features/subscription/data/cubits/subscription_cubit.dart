@@ -1,5 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:test1/core/utils/app_colors.dart';
 import 'package:test1/features/subscription/data/models/plan_model.dart';
 
 class SubscriptionCubit extends Cubit<List<PlanModel>> {
@@ -13,7 +14,7 @@ class SubscriptionCubit extends Cubit<List<PlanModel>> {
         description:
             'Monthly plan is a plan that you can subscribe to only one time a month for all your tickets',
         planTypeIcon: 'assets/icons/Icon.svg',
-        color: Colors.blue,
+        color: AppColors.mainColor,
         numberOfTickets: '30',
         price: '500',
       ),

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:test1/core/utils/Styles.dart';
-import 'package:test1/features/home/Data/models/recent_ride_model.dart';
+import 'package:test1/features/home/Data/models/ride_model.dart';
 
 class TicketHeader extends StatelessWidget {
   const TicketHeader({super.key, required this.recentRideModel});
-  final RecentRideModel recentRideModel;
+  final RideModel recentRideModel;
   @override
   Widget build(BuildContext context) {
     return Row(

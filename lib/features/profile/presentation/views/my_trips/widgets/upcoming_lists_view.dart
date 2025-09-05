@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/utils/Styles.dart';
-import 'package:test1/features/home/Data/models/recent_ride_model.dart';
-import 'package:test1/features/home/presentation/views/widgets/recent_ride_card.dart';
+import 'package:test1/features/home/Data/models/ride_model.dart';
+import 'package:test1/features/home/presentation/views/home_view/widgets/recent_ride_card.dart';
 
 class UpcomingListsView extends StatelessWidget {
   const UpcomingListsView({super.key});
   @override
   Widget build(BuildContext context) {
-    List<RecentRideModel> tripsList = [
-      RecentRideModel(
+    List<RideModel> tripsList = [
+      RideModel(
         lineName: "Zayed line",
         linePrice: '250',
         numberOfstations: '5',

@@ -13,7 +13,7 @@ class PlanItem extends StatelessWidget {
 
     return Container(
       width: size.width * 0.9,
-      height: size.height * 0.26,
+      height: size.height * 0.24,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: plan.color),

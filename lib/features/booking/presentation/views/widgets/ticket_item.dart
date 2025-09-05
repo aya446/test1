@@ -4,8 +4,8 @@ import 'package:test1/core/utils/Styles.dart';
 import 'package:test1/core/utils/app_colors.dart';
 import 'package:test1/features/booking/presentation/views/widgets/dashed_line.dart';
 import 'package:test1/features/booking/presentation/views/widgets/ticket_header.dart';
-import 'package:test1/features/home/Data/models/recent_ride_model.dart';
-import 'package:test1/features/home/presentation/views/widgets/recent_ride_time.dart';
+import 'package:test1/features/home/Data/models/ride_model.dart';
+import 'package:test1/features/home/presentation/views/home_view/widgets/recent_ride_time.dart';
 
 class TicketItem extends StatelessWidget {
   const TicketItem({super.key});
@@ -13,7 +13,7 @@ class TicketItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.sizeOf(context);
-    final RecentRideModel recentRideModel = RecentRideModel(
+    final RideModel recentRideModel = RideModel(
       lineName: "Zayed line  ",
       linePrice: '250',
       numberOfstations: '5',

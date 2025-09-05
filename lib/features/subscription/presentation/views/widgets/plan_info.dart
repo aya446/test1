@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:test1/features/subscription/data/models/plan_model.dart';
+import 'package:test1/features/subscription/presentation/views/widgets/custom_boton.dart';
 
 class PlanInfo extends StatelessWidget {
   const PlanInfo({super.key, required this.plan});
@@ -12,7 +13,7 @@ class PlanInfo extends StatelessWidget {
     final Size size = MediaQuery.sizeOf(context);
 
     return Padding(
-      padding: EdgeInsets.all(size.width * 0.05),
+      padding: EdgeInsets.all(size.width * 0.04),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -56,6 +57,8 @@ class PlanInfo extends StatelessWidget {
               const Text('Per Month', style: TextStyle(fontSize: 14)),
             ],
           ),
+          SizedBox(height: 10),
+          CustomButton(plan: plan),
         ],
       ),
     );
