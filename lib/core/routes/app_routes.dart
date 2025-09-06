@@ -21,5 +21,7 @@ class AppRoutes {
   static const String sendVodafon = '/sendVodafon';
   static const String donePayment = '/donePayment';
   static const String linesView = '/linesView';
+  static const String scanner = '/scanner';
   static const String allLinesView = '/allLinesView';
+  static const String scanned = '/scanned';
 }

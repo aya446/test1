@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:test1/core/routes/app_routes.dart';
 import 'package:test1/core/utils/app_colors.dart';
 
 class ScanIconButton extends StatelessWidget {
@@ -19,7 +20,9 @@ class ScanIconButton extends StatelessWidget {
         ),
       ),
       child: IconButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).pushNamed(AppRoutes.scanner);
+        },
         icon: SvgPicture.asset('assets/icons/scan-barcode.svg', height: 30),
       ),
     );

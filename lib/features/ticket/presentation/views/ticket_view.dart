@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test1/core/utils/Styles.dart';
+import 'package:test1/features/booking/presentation/views/widgets/ticket_item.dart';
 
 class TicketView extends StatelessWidget {
   const TicketView({super.key});
@@ -32,6 +33,8 @@ class TicketView extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(height: 30),
+            TicketItem(),
           ],
         ),
       ),

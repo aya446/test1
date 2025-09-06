@@ -32,7 +32,7 @@ class SeatNumber extends StatelessWidget {
           child: Center(
             child: Text(
               number,
-              style: isSelected || isReserved ? Styles.White12 : Styles.black12,
+              style: isSelected || isReserved ? Styles.White14 : Styles.black12,
             ),
           ),
         ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test1/core/navigation/bottom_nav_layout.dart';
 import 'package:test1/core/routes/app_routes.dart';
 import 'package:test1/features/booking/presentation/views/booking_view.dart';
-import 'package:test1/features/booking/presentation/views/Download_ticket_view.dart';
+import 'package:test1/features/booking/presentation/views/download_ticket_view.dart';
 import 'package:test1/features/home/presentation/views/all_lines_view/all_lines_view.dart';
 import 'package:test1/features/home/presentation/views/lines_view/lines_view.dart';
 import 'package:test1/features/home/presentation/views/notification_view/notification_view.dart';
@@ -18,6 +18,8 @@ import 'package:test1/features/profile/presentation/views/wallet/presentation/vi
 import 'package:test1/features/profile/presentation/views/wallet/presentation/views/vodafone/views/vodafon_view.dart';
 import 'package:test1/features/profile/presentation/views/wallet/presentation/views/payment_methods/views/payment_methods_view.dart';
 import 'package:test1/features/profile/presentation/views/wallet/presentation/views/wallet/views/wallet_view.dart';
+import 'package:test1/features/sacnner/views/scanned_successfully_view.dart';
+import 'package:test1/features/sacnner/views/scanner_view.dart';
 import 'package:test1/features/splash/presentation/views/login_view.dart';
 import 'package:test1/features/splash/presentation/views/register_view.dart';
 import 'package:test1/features/splash/presentation/views/splash_view.dart';
@@ -68,9 +70,16 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const DonePaymentView());
       case AppRoutes.allLinesView:
         return MaterialPageRoute(builder: (_) => const AllLinesView());
+      case AppRoutes.scanner:
+        return MaterialPageRoute(builder: (_) => ScannerView());
       case AppRoutes.linesView:
         final args = settings.arguments as String;
         return MaterialPageRoute(builder: (_) => LinesView(lineName: args));
+      case AppRoutes.scanned:
+        final args = settings.arguments as String;
+        return MaterialPageRoute(
+          builder: (_) => ScannedSuccessfullyView(result: args),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) =>
