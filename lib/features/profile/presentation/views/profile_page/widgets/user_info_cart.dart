@@ -9,7 +9,7 @@ class UserInfoCart extends StatelessWidget {
     final Size size = MediaQuery.sizeOf(context);
     return Container(
       width: double.infinity,
-      height: size.height * .18,
+      height: size.height * .17,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: AppColors.textColor, width: 2),

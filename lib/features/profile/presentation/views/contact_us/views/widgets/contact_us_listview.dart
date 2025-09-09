@@ -3,30 +3,33 @@ import 'package:test1/core/routes/app_routes.dart';
 import 'package:test1/features/profile/data/models/settings_card_model.dart';
 import 'package:test1/features/profile/presentation/views/profile_page/widgets/card_item.dart';
 
-class SettingsListView extends StatelessWidget {
-  const SettingsListView({super.key});
+class ContactUsListview extends StatelessWidget {
+  const ContactUsListview({super.key});
   @override
   Widget build(BuildContext context) {
     List<SettingsCardModel> profileList = [
       SettingsCardModel(
-        icon: 'assets/icons/Location.svg',
-        name: 'City',
-        description: 'Cairo',
-        onTap: () {},
-      ),
-      SettingsCardModel(
-        icon: 'assets/icons/language-square.svg',
-        name: 'Language',
-        description: 'English',
-        onTap: () {},
-      ),
-      SettingsCardModel(
-        icon: 'assets/icons/warning-2.svg',
-        name: 'Report and FAQ',
-        description: 'Report a problem',
+        icon: 'assets/icons/chat.svg',
+        iconColor: Colors.black,
+        name: 'Chat with us directly',
+        description: 'Chat',
         onTap: () {
-          Navigator.pushNamed(context, AppRoutes.report);
+          Navigator.pushNamed(context, AppRoutes.chat);
         },
+      ),
+      SettingsCardModel(
+        icon: 'assets/icons/sms.svg',
+        iconColor: Colors.black,
+        name: 'Khutoot@gmail.com',
+        description: 'Send e-mail',
+        onTap: () {},
+      ),
+      SettingsCardModel(
+        icon: 'assets/icons/call.svg',
+        iconColor: Colors.black,
+        name: '+201001765439',
+        description: 'Call us',
+        onTap: () {},
       ),
     ];
     return ListView.builder(

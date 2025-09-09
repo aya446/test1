@@ -4,8 +4,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:test1/core/utils/Styles.dart';
 import 'package:test1/core/utils/app_colors.dart';
 
-class PhoneInputField extends StatelessWidget {
-  const PhoneInputField({
+class InputField extends StatelessWidget {
+  const InputField({
     super.key,
     this.controller,
     required this.hint,
@@ -23,10 +23,7 @@ class PhoneInputField extends StatelessWidget {
     return TextField(
       controller: controller,
       keyboardType: inputType,
-      inputFormatters: [
-        FilteringTextInputFormatter.digitsOnly,
-        LengthLimitingTextInputFormatter(11),
-      ],
+      inputFormatters: [LengthLimitingTextInputFormatter(11)],
       style: const TextStyle(color: Colors.black),
       decoration: InputDecoration(
         hintText: hint,

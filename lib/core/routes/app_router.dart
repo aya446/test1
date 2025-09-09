@@ -6,6 +6,8 @@ import 'package:test1/features/booking/presentation/views/download_ticket_view.d
 import 'package:test1/features/home/presentation/views/all_lines_view/all_lines_view.dart';
 import 'package:test1/features/home/presentation/views/lines_view/lines_view.dart';
 import 'package:test1/features/home/presentation/views/notification_view/notification_view.dart';
+import 'package:test1/features/profile/presentation/views/contact_us/views/contact_us_view.dart';
+import 'package:test1/features/profile/presentation/views/contact_us/views/chat_view.dart';
 import 'package:test1/features/profile/presentation/views/my_trips/my_trips_view.dart';
 import 'package:test1/features/profile/presentation/views/report/report_datails_view.dart';
 import 'package:test1/features/profile/presentation/views/report/report_success.dart';
@@ -70,8 +72,12 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const DonePaymentView());
       case AppRoutes.allLinesView:
         return MaterialPageRoute(builder: (_) => const AllLinesView());
+      case AppRoutes.contactUs:
+        return MaterialPageRoute(builder: (_) => const ContactUsView());
       case AppRoutes.scanner:
         return MaterialPageRoute(builder: (_) => ScannerView());
+      case AppRoutes.chat:
+        return MaterialPageRoute(builder: (_) => ChatView());
       case AppRoutes.linesView:
         final args = settings.arguments as String;
         return MaterialPageRoute(builder: (_) => LinesView(lineName: args));

@@ -24,4 +24,6 @@ class AppRoutes {
   static const String scanner = '/scanner';
   static const String allLinesView = '/allLinesView';
   static const String scanned = '/scanned';
+  static const String contactUs = '/contactUs';
+  static const String chat = '/chat';
 }

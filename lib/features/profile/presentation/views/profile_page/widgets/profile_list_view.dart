@@ -21,14 +21,17 @@ class ProfileListView extends StatelessWidget {
         name: 'Notification',
         description: 'Notifications',
         status: '(You have new notification)',
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(context, AppRoutes.notification);
+        },
       ),
       SettingsCardModel(
         icon: 'assets/icons/message.svg',
         name: 'Messages and texting',
-        description: 'Massages',
-        status: '(You have new messages)',
-        onTap: () {},
+        description: 'Contact Us',
+        onTap: () {
+          Navigator.pushNamed(context, AppRoutes.contactUs);
+        },
       ),
       SettingsCardModel(
         icon: 'assets/icons/map.svg',
